@@ -4,7 +4,7 @@ This project enhances a previous image compression program by adding the ability
 
 ## Demo Video
 
-The video is a demo of code that loops the program that deletes the lowest energy seam. This program is run through multiple images.
+Demo of code that loops the program that deletes the lowest energy seam. 
 
 
 [![Demo Video](https://github.com/user-attachments/assets/db4e7736-ff20-4535-a122-d1f72dfd6c79)](https://youtu.be/zpXWvhokJPs?si=TMUb9a4rzZimhmK2)
