@@ -3,10 +3,15 @@ package uk.ac.nulondon;
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
+import java.util.Scanner;
 
 public class LiveSeamSlicer {
     public static void main(String args[]) throws Exception{
-        LinkedImage testImage = new LinkedImage("src/main/resources/randal.png");
+        Scanner scanner = new Scanner (System.in);
+        System.out.print("Enter file name: ");  
+        String name = scanner.next(); 
+        
+        LinkedImage testImage = new LinkedImage(name);
 
         int width = 800;
         int height = 800;
@@ -24,7 +29,6 @@ public class LiveSeamSlicer {
             lowE = testImage.findLowestE();
             testImage.highlightSeam(lowE,Color.RED);
             label.setIcon(new ImageIcon(testImage.generateBufferedImage().getScaledInstance(width, height+i, Image.SCALE_SMOOTH)));
-//            testImage.unHighlightSeam(lowE);
             testImage.removeSeam(lowE);
             label.setIcon(new ImageIcon(testImage.generateBufferedImage().getScaledInstance(width, height+i, Image.SCALE_SMOOTH)));
 
