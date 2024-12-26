@@ -1,6 +1,6 @@
 # Image Seam Slicer
 
-This project enhances a previous image compression program by adding the ability to remove vertical seams from PNG images. The initial goal was to create a program that identifies the most blue or lowest energy (least impact when removed) seam in an image, then removes it at the user's request (via the terminal). The user can also undo removals and save a final image. Seam removal and reinsertion needed to be O(n) time complexity. To further this project, I added the ability to watch multiple low energy seams be removed from the image in real time using JFrame.
+The initial goal was to create a program that identifies the most blue or lowest energy (least impact when removed) seam in an image, then removes it at the user's request (via the terminal). The user can also undo removals and save a final image. Seam removal and reinsertion needed to be **O(n)** time complexity. To further this project, I added the ability to watch multiple low energy seams be removed from the image in real time using JFrame.
 
 ### How To Use
 
